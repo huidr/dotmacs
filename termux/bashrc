@@ -1,0 +1,9 @@
+
+# to transfer files/directories from Android to Linux
+# use like this:
+# transfer /storage/emulated/0/Download/file.txt
+# destination directory is set at ~/Downloads/from-android
+transfer () {
+    scp -P 8022 u0_a442@192.0.0.2:"$1" ~/Downloads/from-android
+}
+
