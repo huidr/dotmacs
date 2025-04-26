@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Change this to your output name in Hyprland (use hyprctl monitors to check)
+MONITOR="HDMI-A-1"
+
+# Path to the video
+VIDEO="$HOME/wallpaper/yor-forger.1920x1080.mp4"
+
+# Check if mpvpaper is running
+if pgrep -x "mpvpaper" > /dev/null; then
+    echo "Stopping live wallpaper..."
+    pkill mpvpaper
+else
+    echo "Starting live wallpaper..."
+    mpvpaper -o "no-audio loop=inf panscan=1.0 --video-sync=display-resample --cache=yes" "$MONITOR" "$VIDEO" &
+fi
