@@ -1,0 +1,4 @@
+#!/bin/bash
+
+mpvpaper -o "no-audio loop=inf panscan=1.0 --video-sync=display-resample --cache=yes" HDMI-A-1 ~/wallpaper/yor-forger.1920x1080.mp4
+
