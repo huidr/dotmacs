@@ -1,3 +1,3 @@
-!/bin/bash
+#!/bin/bash
 
-pactl set-sink-volume @DEFAULT@ -10%
+pactl set-sink-volume @DEFAULT_SINK@ -10%
