@@ -1,0 +1,37 @@
+# This is the config file for rtorrent
+# Address: ~/.rtorrent.rc
+
+# Create the following dirs/files
+# mkdir ~/torrents
+# mkdir ~/.rtorrent
+# mkdir ~/.rtorrent/session
+# touch ~/.rtorrent/log
+
+# Directory to save downloaded files
+directory = ~/downloads
+
+# Where to store resume session data
+session = ~/.rtorrent/session
+
+# Default download/upload rate limits (in KB/s); 0 means unlimited
+download_rate = 0
+upload_rate = 0
+
+# Port range to use for incoming connections (use a static one)
+port_range = 6881-6881
+port_random = no
+
+# Enable DHT (Distributed Hash Table) for trackerless torrents
+dht = auto
+dht_port = 6881
+
+# Enable use of UDP tracker protocol
+use_udp_trackers = yes
+
+# Watch a directory for new .torrent files and auto-start them
+schedule = watch_directory,5,5,load_start=~/torrents/*.torrent
+
+# Logging
+log.open_file = "rtorrent", ~/.rtorrent/log
+log.add_output = "info", "rtorrent"
+log.add_output = "error", "rtorrent"
