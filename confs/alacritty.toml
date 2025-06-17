@@ -1,0 +1,70 @@
+# ================= Alacritty configuration ================
+
+# File at ~/.config/alacritty/alacritty.toml
+
+[colors.primary]
+background = "#0f111a"
+foreground = "#f8f8f2"
+
+[colors.normal]
+black = "#000000"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+blue = "#bd93f9"
+magenta = "#ff79c6"
+cyan = "#8be9fd"
+white = "#bbbbbb"
+
+# [font]
+# normal.family = "JetBrainsMono Nerd Font"
+# normal.style = "Regular"
+# size = 11
+
+[window]
+decorations = "none"          # No titlebar [other options: full, transparent, buttonless]
+opacity = 0.70                # Slight transparency
+startup_mode = "Windowed"     # Start Windowed [other options: Maximized, Fullscreen]
+padding = { x = 2, y = 2 }    # Inner padding
+
+[selection]
+save_to_clipboard = true      # Makes selected text go directly to clipboard.
+
+[scrolling]
+history = 10000 # Scrollback buffer in lines
+multiplier = 3   
+
+[cursor]
+style = { shape = "beam", blinking = "always" }
+
+[[keyboard.bindings]] # Map Alt-w to copy
+key = "W"
+mods = "Alt"
+action = "Copy"
+
+[[keyboard.bindings]] # Map C-y to paste
+key = "Y"
+mods = "Control"
+action = "Paste"
+
+[[keyboard.bindings]]
+key = "Equals"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]] # Reset font size
+key = "Key0"
+mods = "Control"
+action = "ResetFontSize"
+
+[terminal.shell]
+program = "/bin/zsh" # default shell (optional)
+args = ["--login"]
+
+[mouse]
+hide_when_typing = true
