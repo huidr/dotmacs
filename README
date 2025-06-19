@@ -2,5 +2,15 @@
 | dotmacs |
 +---------+
 
-A minimal system based on archlinux and wayland focused on speed.
+A lightweight and minimal system focused on speed and efficiency.
 
+OS: archlinux (vanilla)
+DM: Ly
+WM: Hyprland
+Term: foot
+
+Editor: GNU Emacs
+FM: Yazi, dired (Emacs)
+
+Photo: GIMP
+Media: mpv, anime4k
