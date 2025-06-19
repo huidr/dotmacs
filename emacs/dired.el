@@ -1,5 +1,4 @@
 ;; Configure dired
-;; The following may be put in emacs config file
 
 ;; Create a new file
 (defun my/dired-create-file (filename)
