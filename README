@@ -1,4 +1,6 @@
-My configurations for HyprArch and Emacs
-========================================
++---------+
+| dotmacs |
++---------+
 
-The directory `etc` contains configuration files for running Arch on virtual console. The directory `emacs` contains configurations for Emacs (mostly GUI). They are self-documented.
+A minimal system based on archlinux and wayland focused on speed.
+
